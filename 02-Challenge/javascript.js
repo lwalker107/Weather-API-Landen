@@ -12,16 +12,19 @@ document.getElementById('search').addEventListener('click', function() {
         document.getElementById('temp').innerText = 'temperature: ' + currentDay.main.temp + ' degrees Fahrenheit';
         document.getElementById('wind').innerText = 'wind: ' + currentDay.wind.speed + ' MPH';
         document.getElementById('humidity').innerText = 'humidity: ' + currentDay.main.humidity + '%';
+
+        var j = 0
         for (var i = 7; i < data.list.length; i+=8) {
             var day = data.list[i];
             console.log(day)
-            document.getElementById('temp1').innerText = 'temperature: ' + day.main.temp + ' degrees Fahrenheit';
-            document.getElementById('wind1').innerText = 'wind: ' + day.wind.speed + ' MPH';
-            document.getElementById('humidity1').innerText = 'humidity: ' + day.main.humidity + '%';
+            document.getElementById('temp1' + j).innerText = 'temperature: ' + day.main.temp + ' degrees Fahrenheit';
+            document.getElementById('wind1' + j).innerText = 'wind: ' + day.wind.speed + ' MPH';
+            document.getElementById('humidity1' + j).innerText = 'humidity: ' + day.main.humidity + '%';
+            j++;
 
-            document.getElementById('temp2').innerText = 'temperature: ' + day.main.temp + ' degrees Fahrenheit';
-            document.getElementById('wind2').innerText = 'wind: ' + day.wind.speed + ' MPH';
-            document.getElementById('humidity2').innerText = 'humidity: ' + day.main.humidity + '%';
+            // document.getElementById('temp2').innerText = 'temperature: ' + day.main.temp + ' degrees Fahrenheit';
+            // document.getElementById('wind2').innerText = 'wind: ' + day.wind.speed + ' MPH';
+            // document.getElementById('humidity2').innerText = 'humidity: ' + day.main.humidity + '%';
             console.log(day)
 
             
