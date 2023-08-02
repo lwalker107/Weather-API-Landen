@@ -33,6 +33,13 @@ document.getElementById('search').addEventListener('click', function() {
     })
 })
 
+function searchHistory() {
+    var recentSearches = [];
+    recentSearches.push(document.getElementById('searchbar').value);
+
+    console.log(recentSearches)
+}
+
 
 
 
