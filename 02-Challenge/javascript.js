@@ -19,6 +19,11 @@ document.getElementById('search').addEventListener('click', function() {
             document.getElementById('wind1').innerText = 'wind: ' + day.wind.speed + ' MPH';
             document.getElementById('humidity1').innerText = 'humidity: ' + day.main.humidity + '%';
 
+            document.getElementById('temp2').innerText = 'temperature: ' + day.main.temp + ' degrees Fahrenheit';
+            document.getElementById('wind2').innerText = 'wind: ' + day.wind.speed + ' MPH';
+            document.getElementById('humidity2').innerText = 'humidity: ' + day.main.humidity + '%';
+            console.log(day)
+
             
         }
     })
