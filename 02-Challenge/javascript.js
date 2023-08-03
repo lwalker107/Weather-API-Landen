@@ -24,9 +24,9 @@ document.addEventListener('DOMContentLoaded', function() {
                 j++;
                 document.getElementById('date' + j).innerText = '(' + day.dt_txt.split(' ')[0] + ')';
                 document.getElementById('icon' + j).src = 'https://openweathermap.org/img/wn/' + day.weather[0].icon + '.png'
-                document.getElementById('temp' + j).innerText = 'temperature: ' + day.main.temp + ' degrees Fahrenheit';
-                document.getElementById('wind' + j).innerText = 'wind: ' + day.wind.speed + ' MPH';
-                document.getElementById('humidity' + j).innerText = 'humidity: ' + day.main.humidity + '%';
+                document.getElementById('temp' + j).innerText = 'Temperature: ' + day.main.temp + ' degrees Fahrenheit';
+                document.getElementById('wind' + j).innerText = 'Wind: ' + day.wind.speed + ' MPH';
+                document.getElementById('humidity' + j).innerText = 'Humidity: ' + day.main.humidity + '%';
                 
                 console.log(day);
             }
