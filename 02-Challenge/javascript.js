@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
             console.log(data)
             var currentDay = data.list[0];
             document.getElementById('name').innerText = data.city.name;
-            document.getElementById('date').innerText = 'Date: ' + currentDay.dt_txt.split(' ')[0];
+            document.getElementById('date').innerText = '(' + currentDay.dt_txt.split(' ')[0] + ')';
             document.getElementById('icon').src = 'https://openweathermap.org/img/wn/' + currentDay.weather[0].icon + '.png'
             document.getElementById('temp').innerText = 'Temperature: ' + currentDay.main.temp + ' degrees Fahrenheit';
             document.getElementById('wind').innerText = 'Wind: ' + currentDay.wind.speed + ' MPH';
@@ -22,7 +22,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 var day = data.list[i];
                 console.log(day)
                 j++;
-                document.getElementById('date' + j).innerText = 'Date: ' + day.dt_txt.split(' ')[0];
+                document.getElementById('date' + j).innerText = '(' + day.dt_txt.split(' ')[0] + ')';
+                document.getElementById('icon' + j).src = 'https://openweathermap.org/img/wn/' + day.weather[0].icon + '.png'
                 document.getElementById('temp' + j).innerText = 'temperature: ' + day.main.temp + ' degrees Fahrenheit';
                 document.getElementById('wind' + j).innerText = 'wind: ' + day.wind.speed + ' MPH';
                 document.getElementById('humidity' + j).innerText = 'humidity: ' + day.main.humidity + '%';
