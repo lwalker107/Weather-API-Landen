@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather App</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div>
@@ -21,37 +21,44 @@
     <div>
         <div id="main_weather" class="card_main">
             Main weather
+            <p id="name"></p>
             <p id="date"></p>
+            <img id="icon">
             <p id="temp"></p>
             <p id="wind"></p>
             <p id="humidity"></p>
-        </div>
+        </div>forecast
         <div id="forecast" class="card_secondary">
-            forecast
-            <p id="date1"></p>
-            <p id="temp1"></p>
-            <p id="wind1"></p>
-            <p id="humidity1"></p>
-
-            <p id="date2"></p>
-            <p id="temp2"></p>
-            <p id="wind2"></p>
-            <p id="humidity2"></p>
-
-            <p id="date3"></p>
-            <p id="temp3"></p>
-            <p id="wind3"></p>
-            <p id="humidity3"></p>
-
-            <p id="date4"></p>
-            <p id="temp4"></p>
-            <p id="wind4"></p>
-            <p id="humidity4"></p>
-
-            <p id="date5"></p>
-            <p id="temp5"></p>
-            <p id="wind5"></p>
-            <p id="humidity5"></p>
+            <div class="card">
+                <p id="date1"></p>
+                <p id="temp1"></p>
+                <p id="wind1"></p>
+                <p id="humidity1"></p>
+            </div>
+            <div class="card">
+                <p id="date2"></p>
+                <p id="temp2"></p>
+                <p id="wind2"></p>
+                <p id="humidity2"></p>
+            </div>
+            <div class="card">
+                <p id="date3"></p>
+                <p id="temp3"></p>
+                <p id="wind3"></p>
+                <p id="humidity3"></p>
+            </div>
+            <div class="card">
+                <p id="date4"></p>
+                <p id="temp4"></p>
+                <p id="wind4"></p>
+                <p id="humidity4"></p>
+            </div>
+            <div class="card">
+                <p id="date5"></p>
+                <p id="temp5"></p>
+                <p id="wind5"></p>
+                <p id="humidity5"></p>
+            </div>
         </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
