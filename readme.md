@@ -8,5 +8,9 @@ the search bar. Data includes temperature, wind speed, humidity, date, name and 
 
 ## Screenshot
 ![screenshot](./Assets/screenshot_weather.PNG)
+
 ## Link
 ![link](https://lwalker107.github.io/Weather-API-Landen/)
+
+## Tutor Help
+I received help from a tutor for parts of the Javascript dealing with Lines 10-29 that show how to display the information on the page and grabbing the specific info from the API. Also on lines 78-84 on how to create an effective clear button to clear the local storage. AskBCS was also used to help figure out how to position the "weather dashboard" in the style.css.
