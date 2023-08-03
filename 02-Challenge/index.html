@@ -11,20 +11,22 @@
     <div>
         <header>Search for a city</header>
             <input id="searchbar"/>
-                <button id="search">Submit</button>
-            <div id="search_history">
+                <button id="search">Search</button>
+            <div id="searchHistory">
                 <h1>Recent</h1>
+                <ul id="historyList"></ul>
             </div>
+            <button id="clear">Clear</button>
     </div>
     <div>
-        <div id="main_weather">
+        <div id="main_weather" class="card_main">
             Main weather
             <p id="date"></p>
             <p id="temp"></p>
             <p id="wind"></p>
             <p id="humidity"></p>
         </div>
-        <div id="forecast">
+        <div id="forecast" class="card_secondary">
             forecast
             <p id="date1"></p>
             <p id="temp1"></p>
@@ -53,7 +55,7 @@
         </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    
+
     <script src="./javascript.js"></script>
 </body>
 </html>
